@@ -35,13 +35,12 @@ Install
 ;; ======================================================================
 ;; add gtklookup to your loadpath, ex) ~/.emacs.d/gtklookup
 
-;; http://www.emacswiki.org/emacs/download/anything.el
-(require 'anything)
-
 ;; [PATH] without "/"
 
 (setq gtklookup-dir "[PATH]")
 (add-to-list 'load-path gtklookup-dir)
+
+(require 'anything)
 (require 'gtklookup-autoload)
 
 ;;----------------------------------------------------------------------
