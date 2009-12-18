@@ -1,0 +1,54 @@
+===========================
+ GTK+ Reference Lookup Mode
+===========================
+
+:Author: Taesoo Kim (tsgatesv@gmail.com)
+:Date: December 18, 2009
+
+Introduction
+============
+
+ GTK+ Reference Lookup Mode (called gtklooup mode) is to search
+
+        GLib,
+        GObject,
+        GIO,
+        Pango,
+        ATK,
+        GdkPixbuf,
+        GDK,
+        GTK,
+
+ Online html documentation listed on http://www.gtk.org/documentation.html
+
+ Please check,
+    Web  : http://taesoo.org/Opensource/Gtklookup
+    Repo : http://github.com/tsgates/gtklookup
+    
+Install
+=======
+
+ ** [PATH] parameter totally depends on your environment, 
+      ex) "~/.emacs.d/gtklookup"
+
+;; ======================================================================
+;; add gtklookup to your loadpath, ex) ~/.emacs.d/gtklookup
+
+;; [PATH] without "/"
+
+(setq gtklookup-dir "[PATH]")
+(add-to-list 'load-path gtklookup-dir)
+(require 'gtklookup-autoload)
+
+;;----------------------------------------------------------------------
+
+Lookup
+======
+
+ M-x gtklookup-lookup
+
+Update database
+===============
+ ./gtklookup.py -u
+ 
+ see, ./gtklookup.py -h for detail
