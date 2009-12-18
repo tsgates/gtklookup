@@ -24,6 +24,7 @@ Introduction
  Please check,
     Web  : http://taesoo.org/Opensource/Gtklookup
     Repo : http://github.com/tsgates/gtklookup
+    Anything : http://www.emacswiki.org/emacs/Anything
     
 Install
 =======
@@ -33,6 +34,9 @@ Install
 
 ;; ======================================================================
 ;; add gtklookup to your loadpath, ex) ~/.emacs.d/gtklookup
+
+;; http://www.emacswiki.org/emacs/download/anything.el
+(require 'anything)
 
 ;; [PATH] without "/"
 
