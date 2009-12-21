@@ -19,9 +19,9 @@ debug = False
 def fetch_page( db, root, cat ) :
     from BeautifulSoup import BeautifulSoup
 
-    pairs = [ ( "ix01.html", "indexdiv" ),
+    pairs = [ ( "ix01.html", "index" ),
               ( "api-index-full.html", "index" ),
-              ( "index-all.html", "indexdiv" ) ]
+              ( "index-all.html", "index" ) ]
 
     for ( index, div ) in pairs :
         try :
@@ -40,9 +40,14 @@ def fetch_page( db, root, cat ) :
         except :
             continue
 
-        desc = link.string
-        desc = desc.replace( "()", "" )
-        desc = desc.replace( " ", "" ).strip()
+        try :
+            desc = link.string
+            desc = desc.replace( "()", "" )
+            desc = desc.replace( " ", "" ).strip()
+        except :
+            if debug :
+                print "No link in document :", url
+            continue
 
         url = join( root, url.strip() )
         
