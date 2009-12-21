@@ -50,6 +50,19 @@ Lookup
 
  M-x gtklookup-lookup
 
+With auto-complete 
+=============
+
+;; ======================================================================
+(defvar ac-source-gtk
+  '((candidates . gtklookup-get-cache)
+    (cache)
+    (requires . 3))
+  "Source for completing gtk+")
+
+(add-to-list 'ac-sources 'ac-source-gtk) 
+;;----------------------------------------------------------------------
+
 Update database
 ===============
  ./gtklookup.py -u

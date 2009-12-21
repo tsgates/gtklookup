@@ -17,4 +17,7 @@
 (autoload 'gtklookup-update "gtklookup" 
   "Run gtklookup-update and create the database at `gtklookup-db-file'." t)
 
+(autoload 'gtklookup-get-cache "gtklookup"
+  "Fetching cache from gtklookup.py" t)
+
 (provide 'gtklookup-autoload)

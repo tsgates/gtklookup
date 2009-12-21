@@ -66,6 +66,7 @@
           (mapcar (lambda (x) (cons (format "%-40s : %5s" (car x) (caddr x)) (cadr x)))
                   (gtklookup-exec-all)))))
 
+;;;###autoload
 (defun gtklookup-get-cache ()
   "Fetching cache from gtklookup.py"
 
@@ -86,7 +87,7 @@
   "Lookup SEARCH-TERM in the GTK+ Reference indexes."
   
   (interactive)
-  (anything 'anything-c-source-gtk))
+  (anything 'anything-c-source-gtk (symbol-at-point)))
 
 ;;;###autoload
 (defun gtklookup-update (src)
