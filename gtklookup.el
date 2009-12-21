@@ -87,7 +87,7 @@
   "Lookup SEARCH-TERM in the GTK+ Reference indexes."
   
   (interactive)
-  (anything 'anything-c-source-gtk (symbol-at-point)))
+  (anything 'anything-c-source-gtk (symbol-name (symbol-at-point))))
 
 ;;;###autoload
 (defun gtklookup-update (src)
