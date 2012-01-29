@@ -69,8 +69,8 @@ def update_db( dbname ) :
              "Pango"     : "http://library.gnome.org/devel/pango/stable/",
              "ATK"       : "http://library.gnome.org/devel/atk/stable/",
              "GdkPixbuf" : "http://library.gnome.org/devel/gdk-pixbuf/stable/",
-             "GDK"       : "http://library.gnome.org/devel/gdk/stable/",
-             "GTK"       : "http://library.gnome.org/devel/gtk/stable/" }
+             "GDK"       : "http://library.gnome.org/devel/gdk3/stable/",
+             "GTK"       : "http://library.gnome.org/devel/gtk3/stable/" }
 
     root = urls[ "GLib" ]
 
